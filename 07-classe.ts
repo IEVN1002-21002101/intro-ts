@@ -12,3 +12,17 @@ class Persona{
 let persona:Persona;
 persona= new Persona('Juan',23)
 persona.imprimir();
+
+class Dado{
+    private valor:number=0;
+ 
+    public tirar(){
+        this.valor=Math.floor(Math.random()*6)+1;
+    }
+    public imprimier(){
+        console.log(`El valor del dado es ${this.valor}`):
+    }
+}
+let dado1=new Dado();
+dado1.tirar();
+dado1.imprimier();
